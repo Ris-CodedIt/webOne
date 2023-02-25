@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reno Systems</title>
+    <title>RisWebOne</title>
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -17,12 +17,20 @@
       <div class="logo">LO<span>GO</span></div>
       <div class="links-section">
         <ul class="links">
-          <li class="nav-list"><a href="#" class="nav-links">Home</a></li>
-          <li class="nav-list"><a href="#" class="nav-links">Our Values</a></li>
-          <li class="nav-list"><a href="#" class="nav-links">Services</a></li>
+          <li class="nav-list">
+            <a href="#welcome-section" class="nav-links">Home</a>
+          </li>
+          <li class="nav-list">
+            <a href="#values-section" class="nav-links">Our Values</a>
+          </li>
+          <li class="nav-list">
+            <a href="#services-section" class="nav-links">Services</a>
+          </li>
           <li class="nav-list"><a href="#" class="nav-links">Projects</a></li>
           <li class="nav-list"><a href="#" class="nav-links">Shop</a></li>
-          <li class="nav-list"><a href="#" class="nav-links">About</a></li>
+          <li class="nav-list">
+            <a href="#contact-section" class="nav-links">About</a>
+          </li>
         </ul>
       </div>
       <div class="btn-toggle">
@@ -34,17 +42,55 @@
     </nav>
 
     <!-- main container -->
-    <div class="container-fluid">
-      <!-- welcome section -->
-      <section class="row welcome" id="welcome-section">
-        <div class="overlay"></div>
-        <h1 class="header-txt">Welcome to Reno Systems,</h1>
-        <h1 class="sub-header">Home of Smart Solutions.</h1>
-        <p class="sub-txt">Empowered by Inovation.</p>
-      </section>
 
+    <!-- welcome section -->
+    <div class="welcome-section" id="welcome-section">
+      <div class="overlay"></div>
+      <div class="slider">
+        <input type="radio" name="radio-slide" id="radio1" />
+        <input type="radio" name="radio-slide" id="radio2" />
+        <input type="radio" name="radio-slide" id="radio3" />
+        <input type="radio" name="radio-slide" id="radio4" />
+
+        <div class="slide first s1">
+          <h1 class="header-txt">Dummy Text For This Slide,</h1>
+          <h1 class="sub-header">Sub Dummy Text.</h1>
+          <p class="sub-txt">Emphasis dummy text for this slide.</p>
+        </div>
+        <div class="slide s2">
+          <h1 class="header-txt">Dummy Text For This Slide,</h1>
+          <h1 class="sub-header">Sub Dummy Text.</h1>
+          <p class="sub-txt">Emphasis dummy text for this slide.</p>
+        </div>
+        <div class="slide s3">
+          <h1 class="header-txt">Dummy Text For This Slide,</h1>
+          <h1 class="sub-header">Sub Dummy Text.</h1>
+          <p class="sub-txt">Emphasis dummy text for this slide.</p>
+        </div>
+        <div class="slide s4">
+          <h1 class="header-txt">Dummy Text For This Slide,</h1>
+          <h1 class="sub-header">Sub Dummy Text.</h1>
+          <p class="sub-txt">Emphasis dummy text for this slide.</p>
+        </div>
+
+        <div class="automatic-nav">
+          <div class="btn-auto1"></div>
+          <div class="btn-auto2"></div>
+          <div class="btn-auto3"></div>
+          <div class="btn-auto4"></div>
+        </div>
+      </div>
+
+      <div class="manual-nav">
+        <label class="btn-man" for="radio1"></label>
+        <label class="btn-man" for="radio2"></label>
+        <label class="btn-man" for="radio3"></label>
+        <label class="btn-man" for="radio4"></label>
+      </div>
+    </div>
+    <div class="container-fluid">
       <!-- values section -->
-      <section class="row values-section">
+      <section class="row values-section" id="values-section">
         <div class="row">
           <h3 class="section-header">Brief Insite.</h3>
         </div>
@@ -56,7 +102,7 @@
         </div>
         <div class="row values">
           <div class="col-lg-4 col-md-4 col-sm-8 col-xs-8 values-card">
-            <div class="value-icon">20</div>
+            <div class="value-icon">R</div>
             <div class="value-title">Vision</div>
             <p class="text-center value-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
@@ -66,7 +112,7 @@
             </p>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-8 col-xs-8 values-card">
-            <div class="value-icon">20</div>
+            <div class="value-icon">R</div>
             <div class="value-title">Mission</div>
             <p class="text-center value-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
@@ -76,7 +122,7 @@
             </p>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-8 col-xs-8 values-card">
-            <div class="value-icon">20</div>
+            <div class="value-icon">R</div>
             <div class="value-title">values</div>
             <p class="text-center value-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
@@ -89,7 +135,7 @@
       </section>
 
       <!-- products and services section -->
-      <section class="row services-section">
+      <section class="row services-section" id="services-section">
         <div class="row">
           <h3 class="section-header">Our Products And Services.</h3>
         </div>
@@ -157,7 +203,7 @@
       </section>
 
       <!-- tech stack section -->
-      <section class="row stack-section">
+      <section class="row stack-section" id="stack-section">
         <div class="row">
           <h3 class="section-header">Our Tech Stack.</h3>
         </div>
@@ -169,7 +215,7 @@
               class="stack-img"
             />
             <img
-              src="./assets/logos/MySQL_logo_PNG1.png"
+              src="./assets/logos/Visual_Studio_logo_PNG2.png"
               alt=""
               class="stack-img"
             />
@@ -178,11 +224,7 @@
               alt=""
               class="stack-img"
             />
-            <img
-              src="./assets/logos/ChatGPT_Logo_PNG8.png"
-              alt=""
-              class="stack-img"
-            />
+            <img src="./assets/logos/VMware.png" alt="" class="stack-img" />
             <img
               src="./assets/logos/CSS_logo_PNG1.png"
               alt=""
@@ -217,7 +259,7 @@
         </div>
       </section>
 
-      <section class="row contact-section">
+      <section class="row contact-section" id="contact-section">
         <h3 class="section-header">We Are at Your Service</h3>
         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-10 contact">
           <p class="text-center">
