@@ -96,7 +96,7 @@ nav {
 
 /* welcome setion */
 .welcome {
-  background: url("/assets/img/interactive.jpg");
+  background: url("./assets/img/interactive.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -270,7 +270,6 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 /* Stack section */
 
